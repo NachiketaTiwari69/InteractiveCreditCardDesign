@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+
+<body>
+  <div class="cardfront">
+    <div class="logodiv">
+      <svg class="logo" width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff" />
+        <path
+          d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z"
+          stroke="#fff" />
+      </svg>
+    </div>
+    <div class="cardnumberdiv">
+      <p class="cardnumbertext">0000 0000 0000 0000</p>
+    </div>
+    <div class="cardholdername">
+      <p class="cardholdertext">Jane Appleseed</p>
+      <p class="expirytext">02/23</p>
+    </div>
+  </div>
+  <div class="cardback">
+    <p class="cvcnumber">000</p>
+  </div>
+  <div class="main">
+    <div class="left">
+      <img src="/images/bg-main-desktop.png">
+    </div>
+    <div class="right">
+      <div class="row1">
+        <label for="name">CARDHOLDER NAME: </label>
+        <input type="text" id="name" class="info" name="user_name" placeholder="e.g Jane Appleseed" />
+      </div>
+      <div class="row2">
+        <label for="name">CARD NUMBER: </label>
+        <input type="text" id="number" class="info" name="user_number" placeholder="e.g 1234 5678 9123 0000" />
+      </div>
+      <div class="row3">
+        <div class="column1">
+          <label for="name">EXP. DATE (MM/YY)</label>
+          <div class="my">
+            <input type="text" id="month" class="info" name="user_month" placeholder="MM" />
+            <input type="text" id="year" class="info" name="user_year" placeholder="YY" />
+          </div>
+        </div>
+        <div class="column2">
+          <label for="name">CVC</label>
+          <input type="text" id="cvc" class="info" name="user_cvc" placeholder="e.g 123" />
+        </div>
+      </div>
+      <button type="button" id="confirm" name="confirm">Confirm</button>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

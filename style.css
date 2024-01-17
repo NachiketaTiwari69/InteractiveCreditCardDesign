@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ffffff;
+    overflow: hidden;
+    font-family: Space Grotesk;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    height: 100%;
+    width: 35%;
+    position: relative;
+    z-index: 1;
+
+}
+
+img {
+    width: 100%;
+}
+
+.right {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+#name,
+#number {
+    width: 472px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    border: 1px solid #C7C7C9;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#month,
+#year {
+    border-radius: 9px;
+    border: 1px solid #C7C7C9;
+    width: 98px;
+    height: 55px;
+    flex-shrink: 0;
+    margin-top: 10px;
+    padding: 10px;
+
+}
+
+#cvc {
+    width: 236px;
+    height: 55px;
+    flex-shrink: 0;
+    border-radius: 9px;
+    border: 1px solid #C7C7C9;
+    margin-top: 10px;
+    padding: 10px;
+
+}
+
+.row1,
+.row2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.row3 {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.column1,
+.column2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.column2 {
+    padding-left: 20px;
+}
+
+.my {
+    display: flex;
+}
+
+#month {
+    margin-right: 20px;
+}
+
+button {
+    border-radius: 9px;
+    background: #220930;
+    width: 474px;
+    height: 66px;
+    flex-shrink: 0;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+.cardfront {
+    height: 240px;
+    width: 410px;
+    position: absolute;
+    background-color: #220930;
+    z-index: 2;
+    top: 80px;
+    left: 150px;
+    background-image: url("/images/bg-card-front.png");
+    border-radius: 20px;
+}
+
+.logodiv{
+    background-color: transparent ;
+    margin-top: 15px ;
+    margin-left: 15px;
+}
+
+svg{
+    background-color: transparent;
+}
+
+.cardnumberdiv{
+    background-color: transparent;
+}
+
+.cardnumbertext{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 34px;
+    margin-top: 75px;
+    margin-left: 15px;
+}
+
+.cardholdername{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-end;
+}
+
+.cardholdertext{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+
+.expirytext{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 22px;
+}
+
+.cardback {
+    height: 240px;
+    width: 450px;
+    position: absolute;
+    background-color: #220930;
+    z-index: 2;
+    top: 350px;
+    left: 200px;
+    background-image: url("/images/bg-card-back.png");
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cvcnumber {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 15px;
+    position: absolute;
+    left: 370px;
+}
